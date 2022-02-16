@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
 
-  def send_to_url
+  def send_to_url #where all links pass through
     link = Link.where(user_url_code: params[:id].upcase).first
     if link.present?
       redirect_to link.user_url and return

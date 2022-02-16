@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<div id="oldlink">
+<div class="oldlink">
   <strong>Url path:</strong>
   <%= @link.user_url %>
 </div>
 
-<div style="display: none !important;" id="newlink" >
+<div style="display: none !important;" class="newlink" >
   <strong>Url path code:</strong>
   <%= link_to 'localhost:3000/l/' + @link.user_url_code, '/l/' + @link.user_url_code  %>
 </div>
